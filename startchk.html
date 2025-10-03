@@ -482,12 +482,12 @@ function playBeep(type) {
     const subject = encodeURIComponent("スラローム採点");
 
     //*****************************************************************************
-    const to = "Acc-Mca@outlook.jp";
-    const cc = "ikzee.418@outlook.jp";
+    //const to = "Acc-Mca@outlook.jp";
+    //const cc = "ikzee.418@outlook.jp";
 
     // mailtoリンクを作成して開く
-    window.location.href = `mailto:?to=${to}?cc=${cc}?subject=${subject}&body=${body}`;
-    //window.location.href = `mailto:?subject=${subject}&body=${body}`;
+    //window.location.href = `mailto:?to=${to}?cc=${cc}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
     });
 
     // メニューへ戻る
@@ -498,4 +498,5 @@ function playBeep(type) {
     });
 </script>
 </body>
+
 </html>
