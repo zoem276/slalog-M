@@ -589,7 +589,7 @@ button{
 
             // 書式に従ってデータを作成 CRZをCZRに順番変更し文字をなくす
             //old const formattedData = `c${classInput},r${runInput},z${bibNumberValue},${gateData.join(",")}/`; // 例: c1,r2,z123,g1,p0,g2,p2,g3,p50,g4,dsqr
-            const formattedData = `${classInput},${bibNumberValue},${runInput},${gateData.join(",")}/`; // 例: 1,123,2,g1,p0,g2,p2,g3,p50,g4,dsqr
+            const formattedData = `c${classInput},${bibNumberValue},${runInput},${gateData.join(",")}/`; // 例: 1,123,2,g1,p0,g2,p2,g3,p50,g4,dsqr
 
             // 保存処理
             const existingData = localStorage.getItem("GATsavedData") || "";
@@ -715,6 +715,7 @@ button{
 </body>
 
 </html>
+
 
 
 
