@@ -351,9 +351,9 @@
             stopTimeInput.value = currentTime;
 
             // 書式に従ってデータを作成 C,R,Z,TをC,Z,R,Tと順番変更&頭文字削除
-            //const formattedData = `c${classInput},r${runInput},z${bibNumberInput.value},t${currentTime}/`;
+            //org const formattedData = `c${classInput},r${runInput},z${bibNumberInput.value},t${currentTime}/`;
             //const formattedData = `${classInput},${bibNumberInput.value},${runInput},${currentTime}/`;
-            const formattedData = `c${classInput},z${bibNumberInput.value},r${runInput},t${currentTime}/`;
+            const formattedData = `${classInput},${bibNumberInput.value},${runInput},${currentTime}/`;
             
             // 保存処理
             const existingData = localStorage.getItem("STPsavedData") || "";
@@ -441,6 +441,7 @@
 </body>
 
 </html>
+
 
 
 
