@@ -351,7 +351,8 @@
             stopTimeInput.value = currentTime;
 
             // 書式に従ってデータを作成
-            const formattedData = `c${classInput},r${runInput},z${bibNumberInput.value},t${currentTime}/`;
+            //old const formattedData = `c${classInput},r${runInput},z${bibNumberInput.value},t${currentTime}/`;
+            const formattedData = `{classInput},{bibNumberInput.value},{runInput},{currentTime}/`;
 
             // 保存処理
             const existingData = localStorage.getItem("STPsavedData") || "";
@@ -439,3 +440,4 @@
 </body>
 
 </html>
+
